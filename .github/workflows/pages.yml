@@ -1,0 +1,55 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: Build site
+        run: |
+          mkdir -p _site
+          # Copy documentation
+          cp -r docs/* _site/ 2>/dev/null || true
+          cp README.md _site/ 2>/dev/null || true
+          cp AUTOPOIESIS.md _site/ 2>/dev/null || true
+          cp PREFERENCES-GUIDE.md _site/ 2>/dev/null || true
+          cp JIT-MODEL-SPEC.md _site/ 2>/dev/null || true
+          # Copy tiddlers
+          mkdir -p _site/tiddlers
+          cp tiddlers/*.tid _site/tiddlers/ 2>/dev/null || true
+          # Copy diagrams
+          mkdir -p _site/diagrams
+          cp diagrams/*.svg _site/diagrams/ 2>/dev/null || true
+          # Copy growth data (read-only)
+          mkdir -p _site/growth
+          cp growth/*.yaml _site/growth/ 2>/dev/null || true
+          cp growth/*.json _site/growth/ 2>/dev/null || true
+          cp growth/*.txt _site/growth/ 2>/dev/null || true
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
