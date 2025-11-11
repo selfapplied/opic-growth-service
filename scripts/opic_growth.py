@@ -199,12 +199,40 @@ def main():
         except:
             pass
     
+    # Load issue-based preferences
+    try:
+        import importlib.util
+        prefs_path = Path(__file__).parent / "issue_preferences.py"
+        if prefs_path.exists():
+            spec = importlib.util.spec_from_file_location("prefs", prefs_path)
+            prefs_module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(prefs_module)
+            
+            preferences = prefs_module.parse_issue_preferences()
+            if preferences:
+                prefs_report = prefs_module.generate_preference_report(preferences)
+                if prefs_report:
+                    print(prefs_report, file=sys.stderr)
+                    print("", file=sys.stderr)
+    except Exception as e:
+        preferences = []
+        print(f"Note: Issue preferences unavailable: {e}", file=sys.stderr)
+    
     # Synthesize new layers from patterns
     synthesized = synthesize_autonomous_layers(layers, all_text)
     
+    # Apply preferences to boost matching concepts
+    if preferences:
+        synthesized = prefs_module.apply_preferences_to_synthesis(synthesized, preferences)
+    
     # Add synthesized layers if confidence is high enough
     for synth_layer in synthesized:
-        if synth_layer.get('confidence', 0) > 0.4:  # Threshold for auto-inclusion
+        confidence_threshold = 0.4
+        # Lower threshold if preference-matched
+        if synth_layer.get('preference_match'):
+            confidence_threshold = 0.3
+        
+        if synth_layer.get('confidence', 0) > confidence_threshold:
             layer_name = synth_layer['name']
             if layer_name not in {l.get('name') for l in layers}:
                 layers.append({
