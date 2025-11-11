@@ -1,5 +1,22 @@
 # How the OPIC Field Grows
 
+## Autopoietic Growth
+
+The OPIC field now grows **autonomously** through pattern recognition and conceptual synthesis. The witness analyzes existing content to discover new conceptual organs without manual intervention.
+
+### Autonomous Synthesis
+
+The system:
+1. **Analyzes** all tiddler content for patterns
+2. **Extracts** frequently mentioned concepts
+3. **Identifies** conceptual gaps
+4. **Synthesizes** new layers from patterns
+5. **Grows** the field automatically
+
+### Manual Growth
+
+You can still trigger growth manually by adding tiddlers (see below).
+
 ## What Triggers Growth?
 
 The autopoietic witness detects new **conceptual organs** (layers) in two ways:

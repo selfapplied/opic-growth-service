@@ -6,15 +6,33 @@ layers:
 - name: Galois extension
 - color: '#888'
   name: Resonance Field
+- color: '#c8c8c8'
+  confidence: 1.0
+  name: Field
+  source: autopoietic_synthesis
+- color: '#c8c8c8'
+  confidence: 1.0
+  name: Resonance
+  source: autopoietic_synthesis
+- color: '#c8c8c8'
+  confidence: 1.0
+  name: Curvature
+  source: autopoietic_synthesis
 sources:
   Bracket algebra:
   - tiddlers/OPIC-Field-Specification-1.0.tid
+  Curvature:
+  - autopoietic_synthesis
+  Field:
+  - autopoietic_synthesis
   Galois extension:
   - tiddlers/OPIC-Field-Specification-1.0.tid
   Pascal-mod-10 lattice:
   - tiddlers/OPIC-Field-Specification-1.0.tid
+  Resonance:
+  - autopoietic_synthesis
   Resonance Field:
   - tiddlers/Resonance-Field.tid
   Tangent symmetry field:
   - tiddlers/OPIC-Field-Specification-1.0.tid
-timestamp: '2025-11-11T05:20:14.551490'
+timestamp: '2025-11-11T05:21:54.363657'

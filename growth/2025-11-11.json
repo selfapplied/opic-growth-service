@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-11-11T05:20:14.551490",
+  "timestamp": "2025-11-11T05:21:54.363657",
   "date": "2025-11-11",
   "layers": [
     {
@@ -17,6 +17,24 @@
     {
       "name": "Resonance Field",
       "color": "#888"
+    },
+    {
+      "name": "Field",
+      "color": "#c8c8c8",
+      "source": "autopoietic_synthesis",
+      "confidence": 1.0
+    },
+    {
+      "name": "Resonance",
+      "color": "#c8c8c8",
+      "source": "autopoietic_synthesis",
+      "confidence": 1.0
+    },
+    {
+      "name": "Curvature",
+      "color": "#c8c8c8",
+      "source": "autopoietic_synthesis",
+      "confidence": 1.0
     }
   ],
   "sources": {
@@ -34,6 +52,15 @@
     ],
     "Resonance Field": [
       "tiddlers/Resonance-Field.tid"
+    ],
+    "Field": [
+      "autopoietic_synthesis"
+    ],
+    "Resonance": [
+      "autopoietic_synthesis"
+    ],
+    "Curvature": [
+      "autopoietic_synthesis"
     ]
   }
 }

@@ -165,9 +165,56 @@ def generate_growth_report(metrics, new_layers, sources):
     
     return '\n'.join(report)
 
+def synthesize_autonomous_layers(existing_layers, all_text=""):
+    """Attempt autopoietic synthesis to discover new layers from patterns."""
+    try:
+        # Import synthesis module
+        import importlib.util
+        synthesis_path = Path(__file__).parent / "autopoietic_synthesis.py"
+        if synthesis_path.exists():
+            spec = importlib.util.spec_from_file_location("synthesis", synthesis_path)
+            synthesis_module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(synthesis_module)
+            
+            # Run synthesis
+            synthesized = synthesis_module.synthesize_new_layers(existing_layers, all_text)
+            relationships = synthesis_module.discover_relationships(existing_layers, all_text)
+            
+            return synthesized + relationships
+    except Exception as e:
+        print(f"Note: Autopoietic synthesis unavailable: {e}", file=sys.stderr)
+    
+    return []
+
 def main():
-    # Discover current state
+    # Discover current state (manual/explicit layers)
     layers, sources = discover_all_layers()
+    
+    # Attempt autopoietic synthesis
+    # Read all tiddler content for analysis
+    all_text = ""
+    for tid_file in TID_DIR.glob('*.tid'):
+        try:
+            all_text += tid_file.read_text(encoding='utf-8') + "\n\n"
+        except:
+            pass
+    
+    # Synthesize new layers from patterns
+    synthesized = synthesize_autonomous_layers(layers, all_text)
+    
+    # Add synthesized layers if confidence is high enough
+    for synth_layer in synthesized:
+        if synth_layer.get('confidence', 0) > 0.4:  # Threshold for auto-inclusion
+            layer_name = synth_layer['name']
+            if layer_name not in {l.get('name') for l in layers}:
+                layers.append({
+                    'name': layer_name,
+                    'color': synth_layer.get('color', '#999'),
+                    'source': 'autopoietic_synthesis',
+                    'confidence': synth_layer.get('confidence', 0.5)
+                })
+                sources[layer_name] = ['autopoietic_synthesis']
+                print(f"[Autopoietic] Synthesized new layer: {layer_name} (confidence: {synth_layer.get('confidence', 0):.1%})", file=sys.stderr)
     
     # Load history
     history = load_growth_history()
