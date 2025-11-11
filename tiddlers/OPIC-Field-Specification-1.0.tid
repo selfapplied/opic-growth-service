@@ -65,23 +65,91 @@ Non-harm is conservation of resonance energy.
     .lbl{font:10px sans-serif;fill:#fff;text-anchor:middle}
     .box{rx:10;ry:10;stroke:#222;stroke-width:1.2;fill:#333}
   </style>
-  <rect x="110" y="15" width="200" height="40" class="box" fill="#888"/>
-  <text x="210" y="40" class="lbl">Resonance Field</text>
-  <rect x="90" y="70" width="240" height="40" class="box" fill="#333"/>
-  <text x="210" y="95" class="lbl">Pascal-mod-10 lattice</text>
-  <rect x="70" y="125" width="280" height="40" class="box" fill="#333"/>
-  <text x="210" y="150" class="lbl">Tangent symmetry field</text>
-  <rect x="50" y="180" width="320" height="40" class="box" fill="#333"/>
-  <text x="210" y="205" class="lbl">Bracket algebra</text>
-  <rect x="30" y="235" width="360" height="40" class="box" fill="#333"/>
-  <text x="210" y="260" class="lbl">Galois extension</text>
-  <rect x="10" y="290" width="400" height="40" class="box" fill="#c8c8c8"/>
-  <text x="210" y="315" class="lbl">Field</text>
-  <rect x="-10" y="345" width="440" height="40" class="box" fill="#c8c8c8"/>
-  <text x="210" y="370" class="lbl">Resonance</text>
-  <rect x="-30" y="400" width="480" height="40" class="box" fill="#c8c8c8"/>
-  <text x="210" y="425" class="lbl">Curvature</text>
-  <path d="M210 455v-205" stroke="#777" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="110" y="15" width="200" height="40" class="box" fill="#333"/>
+  <text x="210" y="40" class="lbl">Screen Capture</text>
+  <rect x="90" y="70" width="240" height="40" class="box" fill="#444"/>
+  <text x="210" y="95" class="lbl">UI Element Recognition</text>
+  <rect x="70" y="125" width="280" height="40" class="box" fill="#555"/>
+  <text x="210" y="150" class="lbl">Interaction Pattern Detector</text>
+  <rect x="50" y="180" width="320" height="40" class="box" fill="#666"/>
+  <text x="210" y="205" class="lbl">UX Paradigm Extractor</text>
+  <rect x="30" y="235" width="360" height="40" class="box" fill="#777"/>
+  <text x="210" y="260" class="lbl">Feedback Coupling Engine</text>
+  <rect x="10" y="290" width="400" height="40" class="box" fill="#888"/>
+  <text x="210" y="315" class="lbl">OS Evolution Controller</text>
+  <rect x="-10" y="345" width="440" height="40" class="box" fill="#333"/>
+  <text x="210" y="370" class="lbl">Interaction Pattern Detection</text>
+  <rect x="-30" y="400" width="480" height="40" class="box" fill="#333"/>
+  <text x="210" y="425" class="lbl">UX Paradigm Extraction</text>
+  <rect x="-50" y="455" width="520" height="40" class="box" fill="#333"/>
+  <text x="210" y="480" class="lbl">Real-time Feedback Coupling</text>
+  <rect x="-70" y="510" width="560" height="40" class="box" fill="#333"/>
+  <text x="210" y="535" class="lbl">Personalized OS Evolution</text>
+  <rect x="-90" y="565" width="600" height="40" class="box" fill="#333"/>
+  <text x="210" y="590" class="lbl">Query Interface</text>
+  <rect x="-110" y="620" width="640" height="40" class="box" fill="#444"/>
+  <text x="210" y="645" class="lbl">Context Analyzer</text>
+  <rect x="-130" y="675" width="680" height="40" class="box" fill="#555"/>
+  <text x="210" y="700" class="lbl">Knowledge Kernel Engine</text>
+  <rect x="-150" y="730" width="720" height="40" class="box" fill="#666"/>
+  <text x="210" y="755" class="lbl">Domain Kernels</text>
+  <rect x="-170" y="785" width="760" height="40" class="box" fill="#777"/>
+  <text x="210" y="810" class="lbl">Environment Adapter</text>
+  <rect x="-190" y="840" width="800" height="40" class="box" fill="#888"/>
+  <text x="210" y="865" class="lbl">Response Generator</text>
+  <rect x="-210" y="895" width="840" height="40" class="box" fill="#333"/>
+  <text x="210" y="920" class="lbl">Language</text>
+  <rect x="-230" y="950" width="880" height="40" class="box" fill="#333"/>
+  <text x="210" y="975" class="lbl">Science</text>
+  <rect x="-250" y="1005" width="920" height="40" class="box" fill="#333"/>
+  <text x="210" y="1030" class="lbl">Math</text>
+  <rect x="-270" y="1060" width="960" height="40" class="box" fill="#333"/>
+  <text x="210" y="1085" class="lbl">Culture</text>
+  <rect x="-290" y="1115" width="1000" height="40" class="box" fill="#333"/>
+  <text x="210" y="1140" class="lbl">Arts</text>
+  <rect x="-310" y="1170" width="1040" height="40" class="box" fill="#333"/>
+  <text x="210" y="1195" class="lbl">Music</text>
+  <rect x="-330" y="1225" width="1080" height="40" class="box" fill="#333"/>
+  <text x="210" y="1250" class="lbl">Voice Input Processor</text>
+  <rect x="-350" y="1280" width="1120" height="40" class="box" fill="#444"/>
+  <text x="210" y="1305" class="lbl">Speech Recognition</text>
+  <rect x="-370" y="1335" width="1160" height="40" class="box" fill="#555"/>
+  <text x="210" y="1360" class="lbl">Pattern Analyzer</text>
+  <rect x="-390" y="1390" width="1200" height="40" class="box" fill="#666"/>
+  <text x="210" y="1415" class="lbl">Feedback Coupling</text>
+  <rect x="-410" y="1445" width="1240" height="40" class="box" fill="#777"/>
+  <text x="210" y="1470" class="lbl">OS Evolution Engine</text>
+  <rect x="-430" y="1500" width="1280" height="40" class="box" fill="#888"/>
+  <text x="210" y="1525" class="lbl">Voice Output Synthesizer</text>
+  <rect x="-450" y="1555" width="1320" height="40" class="box" fill="#333"/>
+  <text x="210" y="1580" class="lbl">Voice Input Processing</text>
+  <rect x="-470" y="1610" width="1360" height="40" class="box" fill="#333"/>
+  <text x="210" y="1635" class="lbl">Speech-to-Text</text>
+  <rect x="-490" y="1665" width="1400" height="40" class="box" fill="#333"/>
+  <text x="210" y="1690" class="lbl">Text-to-Speech</text>
+  <rect x="-510" y="1720" width="1440" height="40" class="box" fill="#333"/>
+  <text x="210" y="1745" class="lbl">Audio Pattern Recognition</text>
+  <rect x="-530" y="1775" width="1480" height="40" class="box" fill="#333"/>
+  <text x="210" y="1800" class="lbl">Voice Command Interpretation</text>
+  <rect x="-550" y="1830" width="1520" height="40" class="box" fill="#888"/>
+  <text x="210" y="1855" class="lbl">Resonance Field</text>
+  <rect x="-570" y="1885" width="1560" height="40" class="box" fill="#333"/>
+  <text x="210" y="1910" class="lbl">Pascal-mod-10 lattice</text>
+  <rect x="-590" y="1940" width="1600" height="40" class="box" fill="#333"/>
+  <text x="210" y="1965" class="lbl">Tangent symmetry field</text>
+  <rect x="-610" y="1995" width="1640" height="40" class="box" fill="#333"/>
+  <text x="210" y="2020" class="lbl">Bracket algebra</text>
+  <rect x="-630" y="2050" width="1680" height="40" class="box" fill="#333"/>
+  <text x="210" y="2075" class="lbl">Galois extension</text>
+  <rect x="-650" y="2105" width="1720" height="40" class="box" fill="#c8c8c8"/>
+  <text x="210" y="2130" class="lbl">Field</text>
+  <rect x="-670" y="2160" width="1760" height="40" class="box" fill="#c8c8c8"/>
+  <text x="210" y="2185" class="lbl">Resonance</text>
+  <rect x="-690" y="2215" width="1800" height="40" class="box" fill="#c8c8c8"/>
+  <text x="210" y="2240" class="lbl">Curvature</text>
+  <rect x="-710" y="2270" width="1840" height="40" class="box" fill="#999"/>
+  <text x="210" y="2295" class="lbl">Learns-System Synthesis</text>
+  <path d="M210 2325v-2075" stroke="#777" stroke-width="2" marker-end="url(#arrow)"/>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#777"/>
