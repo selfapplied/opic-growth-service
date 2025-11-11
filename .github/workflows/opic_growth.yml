@@ -12,13 +12,14 @@ jobs:
   witness:
     runs-on: ubuntu-latest
     name: OPIC Field Growth Witness
+    permissions:
+      contents: write  # Allow writing to repository
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # Full history for growth tracking
-          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -61,5 +62,5 @@ jobs:
           git config --local user.email "bot@awildsort.com"
           git add growth/ diagrams/ tiddlers/OPIC-Field-Specification-1.0.tid
           git diff --staged --quiet || git commit -m "daily opic expansion: $(date -u +%Y-%m-%d)"
-          git push
+          git push origin HEAD:main
 
