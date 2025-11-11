@@ -68,17 +68,34 @@ def parse_issue_preferences():
                             'labels': [l.get('name') for l in issue.get('labels', [])]
                         })
             
-            # Also extract capitalized terms as potential concepts
-            capitalized = re.findall(r'\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\b', text)
-            for term in capitalized[:5]:  # Limit to top 5 per issue
-                if len(term) > 3:
+            # Extract key concepts from title (more reliable)
+            title = issue.get('title', '')
+            # Remove common words and extract meaningful concepts
+            title_concepts = re.findall(r'\b(?:Add|Create|Prioritize|Need)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)*)', title, re.IGNORECASE)
+            for concept in title_concepts:
+                if len(concept) > 3 and concept.lower() not in ['layer', 'concept', 'field']:
                     preferences.append({
-                        'concept': term,
-                        'priority': calculate_priority(issue) * 0.7,  # Lower weight for inferred
+                        'concept': concept,
+                        'priority': calculate_priority(issue) * 0.9,  # High weight for title concepts
                         'source': f"issue #{issue.get('number')}",
-                        'title': issue.get('title', ''),
+                        'title': title,
                         'labels': [l.get('name') for l in issue.get('labels', [])]
                     })
+            
+            # Also extract from body if no title concepts found
+            if not title_concepts:
+                capitalized = re.findall(r'\b([A-Z][a-z]{3,}(?:\s+[A-Z][a-z]+)*)\b', text)
+                # Filter out common words
+                common_words = {'this', 'that', 'the', 'and', 'for', 'with', 'from', 'need', 'should', 'will', 'can', 'layer', 'concept'}
+                for term in capitalized[:3]:  # Limit to top 3
+                    if len(term) > 3 and term.lower() not in common_words:
+                        preferences.append({
+                            'concept': term,
+                            'priority': calculate_priority(issue) * 0.7,
+                            'source': f"issue #{issue.get('number')}",
+                            'title': title,
+                            'labels': [l.get('name') for l in issue.get('labels', [])]
+                        })
         
         return preferences
     
