@@ -73,7 +73,9 @@ Non-harm is conservation of resonance energy.
   <text x="210" y="150" class="lbl">Bracket algebra</text>
   <rect x="50" y="180" width="320" height="40" class="box" fill="#333"/>
   <text x="210" y="205" class="lbl">Galois extension</text>
-  <path d="M210 235v15" stroke="#777" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="30" y="235" width="360" height="40" class="box" fill="#888"/>
+  <text x="210" y="260" class="lbl">Resonance Field</text>
+  <path d="M210 290v-40" stroke="#777" stroke-width="2" marker-end="url(#arrow)"/>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 z" fill="#777"/>

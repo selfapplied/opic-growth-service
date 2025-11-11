@@ -4,6 +4,8 @@ layers:
 - name: Tangent symmetry field
 - name: Bracket algebra
 - name: Galois extension
+- color: '#888'
+  name: Resonance Field
 sources:
   Bracket algebra:
   - tiddlers/OPIC-Field-Specification-1.0.tid
@@ -11,6 +13,8 @@ sources:
   - tiddlers/OPIC-Field-Specification-1.0.tid
   Pascal-mod-10 lattice:
   - tiddlers/OPIC-Field-Specification-1.0.tid
+  Resonance Field:
+  - tiddlers/Resonance-Field.tid
   Tangent symmetry field:
   - tiddlers/OPIC-Field-Specification-1.0.tid
-timestamp: '2025-11-11T13:19:26.401645'
+timestamp: '2025-11-11T05:20:14.551490'
