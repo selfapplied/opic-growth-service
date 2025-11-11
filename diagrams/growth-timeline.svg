@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <style>
+    .axis{stroke:#666;stroke-width:1}
+    .line{stroke:#4a9;stroke-width:2;fill:none}
+    .point{fill:#4a9;r:4}
+    .label{font:10px sans-serif;fill:#aaa}
+    .title{font:14px sans-serif;fill:#333}
+  </style>
+  <text x="400" y="20" class="title" text-anchor="middle">OPIC Field Growth Timeline</text>
+  <line x1="40" y1="40" x2="40" y2="360" class="axis"/>
+  <line x1="40" y1="360" x2="760" y2="360" class="axis"/>
+  <circle cx="400.0" cy="40.0" class="point"/>
+  <text x="400.0" y="375" class="label" text-anchor="middle">2025-11-11</text>
+  <text x="400.0" y="35.0" class="label" text-anchor="middle">4</text>
+  <text x="30" y="363.0" class="label" text-anchor="end">0</text>
+  <text x="30" y="283.0" class="label" text-anchor="end">1</text>
+  <text x="30" y="203.0" class="label" text-anchor="end">2</text>
+  <text x="30" y="123.0" class="label" text-anchor="end">3</text>
+  <text x="30" y="43.0" class="label" text-anchor="end">4</text>
+</svg>

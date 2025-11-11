@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <style>
+    .ring{fill:none;stroke-width:3}
+    .label{font:9px sans-serif;fill:#666;text-anchor:middle}
+    .title{font:12px sans-serif;fill:#333;text-anchor:middle}
+  </style>
+  <text x="200" y="15" class="title">OPIC Field Growth Rings</text>
+  <circle cx="200" cy="200" r="180.0" class="ring" stroke="#333"/>
+  <text x="390.0" y="203" class="label">2025-11-11 (4)</text>
+</svg>
