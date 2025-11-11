@@ -1,7 +1,11 @@
 {
-  "timestamp": "2025-11-11T05:22:18.168579",
+  "timestamp": "2025-11-11T13:22:31.957154",
   "date": "2025-11-11",
   "layers": [
+    {
+      "name": "Resonance Field",
+      "color": "#888"
+    },
     {
       "name": "Pascal-mod-10 lattice"
     },
@@ -13,10 +17,6 @@
     },
     {
       "name": "Galois extension"
-    },
-    {
-      "name": "Resonance Field",
-      "color": "#888"
     },
     {
       "name": "Field",
@@ -38,6 +38,9 @@
     }
   ],
   "sources": {
+    "Resonance Field": [
+      "tiddlers/Resonance-Field.tid"
+    ],
     "Pascal-mod-10 lattice": [
       "tiddlers/OPIC-Field-Specification-1.0.tid"
     ],
@@ -49,9 +52,6 @@
     ],
     "Galois extension": [
       "tiddlers/OPIC-Field-Specification-1.0.tid"
-    ],
-    "Resonance Field": [
-      "tiddlers/Resonance-Field.tid"
     ],
     "Field": [
       "autopoietic_synthesis"
