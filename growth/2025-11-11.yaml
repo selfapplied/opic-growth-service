@@ -1,0 +1,16 @@
+date: '2025-11-11'
+layers:
+- name: Pascal-mod-10 lattice
+- name: Tangent symmetry field
+- name: Bracket algebra
+- name: Galois extension
+sources:
+  Bracket algebra:
+  - OPIC-Field-Specification-1.0.tid
+  Galois extension:
+  - OPIC-Field-Specification-1.0.tid
+  Pascal-mod-10 lattice:
+  - OPIC-Field-Specification-1.0.tid
+  Tangent symmetry field:
+  - OPIC-Field-Specification-1.0.tid
+timestamp: '2025-11-11T05:07:25.822784'

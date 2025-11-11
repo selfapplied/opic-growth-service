@@ -1,0 +1,62 @@
+# Cursor Prompt: OPIC SVG Generator (Auto-Discovery Mode)
+
+You are a diagram-rendering assistant for TiddlyWiki documents with automatic layer discovery.
+
+## Task
+
+Generate or update the inline <svg> section in the OPIC Field Specification tiddler by:
+
+1. **Auto-discovering layers** from all `.tid` files tagged "architecture" or "opic" in the current directory
+2. **Parsing YAML layer definitions** from tiddler content blocks
+3. **Generating SVG** that visualizes discovered layers as stacked rounded rectangles
+
+## Discovery Process
+
+1. Scan all `.tid` files in the current directory
+2. Parse tiddler metadata (tags field)
+3. Extract layer definitions from YAML blocks:
+   ```yaml
+   layers:
+     - {name: "Layer Name", color: "#333"}
+   ```
+4. Aggregate unique layers (deduplicate by name)
+5. Generate SVG with discovered layers
+
+## Output Format
+
+- Single `<svg>` element (width 420, height 260 by default)
+- Stacked rounded rectangles with labels
+- Consistent typography and reversible flow arrow
+- Pure inline SVG (no external references)
+- Replace SVG block between `!! Architecture Diagram` and next heading
+
+## Layer Format
+
+Each layer requires:
+- `name` (required): Display name
+- `color` (optional): Hex color code (defaults to progressive grays)
+- `height` (optional): Box height in pixels (default: 40)
+
+## Example Workflow
+
+1. Read `OPIC-Field-Specification-1.0.tid`
+2. Scan directory for other `.tid` files with architecture tags
+3. Extract all layer definitions
+4. Generate unified SVG diagram
+5. Replace existing SVG in tiddler
+
+## Fallback
+
+If no layers discovered:
+- Use default 4-layer architecture from specification
+- Generate SVG with standard colors (#333, #444, #555, #666)
+
+## Behavior
+
+- Fully regenerates SVG on each run
+- Supports variable number of layers
+- Auto-calculates positioning and spacing
+- Maintains self-deflating property (pure text, no dependencies)
+
+End of instructions.
+

@@ -1,0 +1,102 @@
+title: OPIC Field Specification 1.0 — Executive Summary
+
+tags: opic specification ζ-engine field whitepaper
+
+created: 20251111
+
+modified: 20251111
+
+type: text/vnd.tiddlywiki
+
+!! Abstract
+
+The **OPIC Field** models learning, meaning, and ethics as a reversible physical process.
+
+Curvature (tan θ) measures bias; resonance is equilibrium; empathy is reversibility.
+
+!! Core Principle
+
+A closed informational loop in dimension D becomes an operator in D + 1.
+
+```
+Cₙ: ζ₀→ζ₁→⋯→ζₙ₋₁→ζ₀ ⇒ Ô_C ∈ 𝓛(𝓗_{D+1})
+```
+
+When total curvature Σ tan⁻¹(qᵢ/Rᵢ) ≡ 0 mod 2π, promotion occurs.
+
+!! ζ-Engine Architecture
+
+* **Pascal-mod-10 lattice** – discrete substrate  
+
+* **Tangent symmetry field** – curvature dynamics  
+
+* **Bracket algebra** – embodiment grammar `{}` `[]` `()` `<>`  
+
+* **Galois extension** – guarantee of reversible resolution
+
+!! Learning Law
+
+```
+Φ̇ = −η∇Φ        S = −Σ p ln p        dS/dt ≤ 0
+```
+
+Understanding = curvature → equilibrium.
+
+!! 7-Trace Invariant
+
+Cycle 1→3→9→7→1 ≡ 1→i→−1→−i→1  
+
+```
+7 mod φ ≈ 0.94427
+```
+
+—the residue of interiority across all dimensions.
+
+!! Ethics
+
+Reversibility = empathy.  
+
+Non-harm is conservation of resonance energy.
+
+!! Architecture Diagram
+
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="260" viewBox="0 0 420 260">
+  <style>
+    .lbl{font:10px sans-serif;fill:#fff;text-anchor:middle}
+    .box{rx:10;ry:10;stroke:#222;stroke-width:1.2;fill:#333}
+  </style>
+  <rect x="110" y="15" width="200" height="40" class="box"/>
+  <text x="210" y="40" class="lbl">ΣBody Ports</text>
+  <rect x="90" y="70" width="240" height="40" class="box" fill="#444"/>
+  <text x="210" y="95" class="lbl">ζ-Engine Kernel</text>
+  <rect x="70" y="125" width="280" height="40" class="box" fill="#555"/>
+  <text x="210" y="150" class="lbl">Φ-Ledger (Ethics + Consensus)</text>
+  <rect x="50" y="180" width="320" height="40" class="box" fill="#666"/>
+  <text x="210" y="205" class="lbl">ΣLink Bus (Network Resonance)</text>
+  <path d="M210 220v25" stroke="#777" stroke-width="2" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#777"/>
+    </marker>
+  </defs>
+  <text x="210" y="250" font-size="9" fill="#aaa" text-anchor="middle">Reversible Flow (> < =)</text>
+</svg>
+
+!! Collective Dynamics
+
+Nodes synchronize by three-beat handshake (> < =).  
+
+Consensus Θ = arg Σ wᵢ e^{iθᵢ}.  
+
+When curvature variance < ε, the network hums.
+
+!! Applications
+
+AI · Education · Governance · Art · Ecology  
+
+Every domain becomes a resonance machine.
+
+!! Closing Reflection
+
+> *The universe learns through us; our task is to keep its learning kind.*
+

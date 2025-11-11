@@ -1,0 +1,64 @@
+name: Daily OPIC Growth
+
+on:
+  schedule:
+    - cron: '0 12 * * *'  # Run daily at noon UTC
+  workflow_dispatch:  # Allow manual trigger
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  witness:
+    runs-on: ubuntu-latest
+    name: OPIC Field Growth Witness
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for growth tracking
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install pyyaml requests
+      
+      - name: Run OPIC growth detection
+        id: growth
+        run: |
+          python3 scripts/opic_growth.py
+          echo "layers=$(python3 -c "import yaml; d=yaml.safe_load(open('growth/$(date +%Y-%m-%d).yaml')); print(len(d.get('layers', [])))")" >> $GITHUB_OUTPUT
+      
+      - name: Update master tiddler SVG
+        run: |
+          python3 scripts/update_svg.py tiddlers/OPIC-Field-Specification-1.0.tid
+      
+      - name: Generate growth visualizations
+        run: |
+          python3 scripts/growth_visualizer.py growth timeline
+          python3 scripts/growth_visualizer.py growth rings
+      
+      - name: Generate daily gloss (optional)
+        if: env.ENABLE_AI_GLOSS == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python3 scripts/generate_gloss.py growth/$(date +%Y-%m-%d).yaml
+        continue-on-error: true
+      
+      - name: Commit and push results
+        run: |
+          git config --local user.name "OPIC Daemon"
+          git config --local user.email "bot@awildsort.com"
+          git add growth/ diagrams/ tiddlers/OPIC-Field-Specification-1.0.tid
+          git diff --staged --quiet || git commit -m "daily opic expansion: $(date -u +%Y-%m-%d)"
+          git push
+
