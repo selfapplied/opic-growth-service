@@ -1,11 +1,11 @@
 date: '2025-11-11'
 layers:
+- color: '#888'
+  name: Resonance Field
 - name: Pascal-mod-10 lattice
 - name: Tangent symmetry field
 - name: Bracket algebra
 - name: Galois extension
-- color: '#888'
-  name: Resonance Field
 - color: '#c8c8c8'
   confidence: 1.0
   name: Field
@@ -35,4 +35,4 @@ sources:
   - tiddlers/Resonance-Field.tid
   Tangent symmetry field:
   - tiddlers/OPIC-Field-Specification-1.0.tid
-timestamp: '2025-11-11T05:21:54.363657'
+timestamp: '2025-11-11T13:22:31.957154'
