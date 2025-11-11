@@ -18,12 +18,22 @@ def parse_issue_preferences():
         import json
         
         # Fetch issues with label "opic-growth" or "field-priority"
+        # Try with comma-separated labels first
         result = subprocess.run(
-            ['gh', 'issue', 'list', '--label', 'opic-growth,field-priority', '--json', 'number,title,body,labels'],
+            ['gh', 'issue', 'list', '--label', 'opic-growth', '--label', 'field-priority', '--json', 'number,title,body,labels'],
             capture_output=True,
             text=True,
             cwd=REPO_DIR
         )
+        
+        # If that fails, try fetching all issues and filtering
+        if result.returncode != 0 or not result.stdout.strip():
+            result = subprocess.run(
+                ['gh', 'issue', 'list', '--json', 'number,title,body,labels'],
+                capture_output=True,
+                text=True,
+                cwd=REPO_DIR
+            )
         
         if result.returncode != 0:
             # Fallback: try reading from local file if gh CLI unavailable
