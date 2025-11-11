@@ -1,6 +1,8 @@
 name: Deploy to GitHub Pages
 
 on:
+  schedule:
+    - cron: '0 13 * * *'  # Run daily at 1pm UTC (after OPIC growth)
   push:
     branches:
       - main
@@ -22,6 +24,13 @@ jobs:
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        continue-on-error: true
+        id: pages
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
       
       - name: Build site
         run: |
@@ -32,6 +41,8 @@ jobs:
           cp AUTOPOIESIS.md _site/ 2>/dev/null || true
           cp PREFERENCES-GUIDE.md _site/ 2>/dev/null || true
           cp JIT-MODEL-SPEC.md _site/ 2>/dev/null || true
+          cp WIDGET-FRAMEWORK-REQUEST.md _site/ 2>/dev/null || true
+          cp IMPLEMENTATION-STATUS.md _site/ 2>/dev/null || true
           # Copy tiddlers
           mkdir -p _site/tiddlers
           cp tiddlers/*.tid _site/tiddlers/ 2>/dev/null || true
@@ -43,13 +54,20 @@ jobs:
           cp growth/*.yaml _site/growth/ 2>/dev/null || true
           cp growth/*.json _site/growth/ 2>/dev/null || true
           cp growth/*.txt _site/growth/ 2>/dev/null || true
+          # Generate and copy JIT model demo HTML
+          python3 scripts/jit_model_generator.py
+          cp jit_model_demo.html _site/ 2>/dev/null || true
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+        continue-on-error: true
       
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
+        if: steps.pages.outcome == 'success'
+
 
