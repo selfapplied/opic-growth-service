@@ -9,9 +9,13 @@
   <text x="400" y="20" class="title" text-anchor="middle">OPIC Field Growth Timeline</text>
   <line x1="40" y1="40" x2="40" y2="360" class="axis"/>
   <line x1="40" y1="360" x2="760" y2="360" class="axis"/>
-  <circle cx="400.0" cy="40.0" class="point"/>
-  <text x="400.0" y="375" class="label" text-anchor="middle">2025-11-11</text>
-  <text x="400.0" y="35.0" class="label" text-anchor="middle">42</text>
+  <path d="M 40.0,40.0 L 760.0,40.0" class="line"/>
+  <circle cx="40.0" cy="40.0" class="point"/>
+  <text x="40.0" y="375" class="label" text-anchor="middle">2025-11-11</text>
+  <text x="40.0" y="35.0" class="label" text-anchor="middle">42</text>
+  <circle cx="760.0" cy="40.0" class="point"/>
+  <text x="760.0" y="375" class="label" text-anchor="middle">2025-11-12</text>
+  <text x="760.0" y="35.0" class="label" text-anchor="middle">42</text>
   <text x="30" y="363.0" class="label" text-anchor="end">0</text>
   <text x="30" y="302.04761904761904" class="label" text-anchor="end">8</text>
   <text x="30" y="241.0952380952381" class="label" text-anchor="end">16</text>
