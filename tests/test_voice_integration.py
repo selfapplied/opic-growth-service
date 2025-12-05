@@ -265,7 +265,7 @@ def test_layer_metadata():
 def run_all_tests():
     """Run all tests."""
     print("=" * 50)
-    print("Voice Integration Layer — Test Suite")
+    print("Voice Integration Layer - Test Suite")
     print("=" * 50)
     print()
     

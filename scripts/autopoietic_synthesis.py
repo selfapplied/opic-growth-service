@@ -129,7 +129,7 @@ def discover_voice_integration_layers(existing_layers):
             
             return voice_layers
     except Exception as e:
-        print(f"Note: Voice integration discovery unavailable: {e}", file=sys.stderr)
+        print(f"Note: Failed to discover voice integration components: {e}", file=sys.stderr)
     
     return []
 

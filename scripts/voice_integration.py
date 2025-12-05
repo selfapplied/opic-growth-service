@@ -192,7 +192,7 @@ class TextToSpeech:
         """Add a custom voice profile."""
         self.voice_profiles[name] = {
             'pitch': max(0.1, min(2.0, pitch)),
-            'rate': max(0.1, min(10.0, rate)),
+            'rate': max(0.1, min(3.0, rate)),  # Max 3x speed for intelligibility
             'volume': max(0.0, min(1.0, volume))
         }
     
@@ -216,7 +216,8 @@ class AudioPatternRecognizer:
         (r'^(create|new|make)\s+(.+)$', 'create'),
         (r'^(delete|remove)\s+(.+)$', 'delete'),
         (r'^(save|store)\s+(.+)$', 'save'),
-        (r'^(help|assist|what is)\s*(.*)$', 'help'),
+        (r'^(help|assist)\s*(.*)$', 'help'),
+        (r'^(what is|what are|what\'s)\s+(.+)\??$', 'help'),
         (r'^(cancel|stop|abort)$', 'cancel'),
         (r'^(undo|reverse)$', 'undo'),
         (r'^(redo|repeat)$', 'redo'),
