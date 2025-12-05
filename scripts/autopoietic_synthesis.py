@@ -94,7 +94,44 @@ def synthesize_new_layers(existing_layers, all_text):
             'context': candidate['context']
         })
     
+    # Include voice integration layers if voice module is available
+    voice_layers = discover_voice_integration_layers(existing_layers)
+    synthesized.extend(voice_layers)
+    
     return synthesized
+
+
+def discover_voice_integration_layers(existing_layers):
+    """Discover layers from voice integration module."""
+    try:
+        import importlib.util
+        voice_path = Path(__file__).parent / "voice_integration.py"
+        if voice_path.exists():
+            spec = importlib.util.spec_from_file_location("voice", voice_path)
+            voice_module = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(voice_module)
+            
+            # Get voice layer metadata
+            metadata = voice_module.get_voice_layer_metadata()
+            existing_names = {l.get('name', '').lower() for l in existing_layers}
+            
+            voice_layers = []
+            for component in metadata.get('components', []):
+                name = component.get('name', '')
+                if name.lower() not in existing_names:
+                    voice_layers.append({
+                        'name': name,
+                        'color': component.get('color', '#555'),
+                        'source': 'voice_integration',
+                        'confidence': 0.95,
+                        'context': 'Voice Integration Layer component'
+                    })
+            
+            return voice_layers
+    except Exception as e:
+        print(f"Note: Voice integration discovery unavailable: {e}", file=sys.stderr)
+    
+    return []
 
 def generate_color_for_layer(name, index):
     """Generate a color for a new layer based on its position."""
