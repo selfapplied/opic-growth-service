@@ -16,7 +16,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 from thermal_field import (
     ThermalFieldAnalyzer,
     ThermalState,
-    CoolingOptimizer
+    CoolingOptimizer,
+    EPSILON
 )
 import numpy as np
 
@@ -131,7 +132,10 @@ def generate_thermal_comparison_svg(before_state, after_state, metrics_before, m
     ])
     
     # Improvements summary
-    entropy_reduction = (metrics_before.entropy - metrics_after.entropy) / metrics_before.entropy
+    if metrics_before.entropy > EPSILON:
+        entropy_reduction = (metrics_before.entropy - metrics_after.entropy) / metrics_before.entropy
+    else:
+        entropy_reduction = 0.0
     curvature_reduction = metrics_before.curvature - metrics_after.curvature
     alignment_improvement = metrics_after.alignment_coefficient - metrics_before.alignment_coefficient
     

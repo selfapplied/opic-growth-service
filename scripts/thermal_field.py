@@ -12,6 +12,15 @@ from dataclasses import dataclass, field as dc_field
 import json
 
 
+# Numerical stability constant
+EPSILON = 1e-10
+
+# Temperature-load scaling coefficient (K per unit load)
+# Justification: Typical data centers run 5-10K warmer under high load
+# This allows efficiency gains by not over-cooling high-load zones
+TEMP_LOAD_COEFFICIENT = 5.0
+
+
 @dataclass
 class ThermalState:
     """Represents a thermal state with temperature field and load."""
@@ -118,16 +127,16 @@ class ThermalFieldAnalyzer:
         """
         # Normalize fields to probability distributions
         T_norm = np.abs(T_field - self.baseline_temp)
-        T_norm = T_norm / (np.sum(T_norm) + 1e-10)
+        T_norm = T_norm / (np.sum(T_norm) + EPSILON)
         
-        load_norm = load_field / (np.sum(load_field) + 1e-10)
+        load_norm = load_field / (np.sum(load_field) + EPSILON)
         
         # Compute coupling distribution
         coupling = T_norm * load_norm
-        coupling = coupling / (np.sum(coupling) + 1e-10)
+        coupling = coupling / (np.sum(coupling) + EPSILON)
         
         # Remove zeros to avoid log(0)
-        coupling_nonzero = coupling[coupling > 1e-10]
+        coupling_nonzero = coupling[coupling > EPSILON]
         
         # Compute entropy
         entropy = -np.sum(coupling_nonzero * np.log(coupling_nonzero))
@@ -154,7 +163,7 @@ class ThermalFieldAnalyzer:
         S_before = self.thermal_entropy(T_before, load)
         S_after = self.thermal_entropy(T_after, load)
         
-        if S_before < 1e-10:
+        if S_before < EPSILON:
             return 0.0
             
         reduction = (S_before - S_after) / S_before
@@ -182,9 +191,9 @@ class ThermalFieldAnalyzer:
         mean_dev = np.mean(deviation)
         std_target = np.std(T_target)
         
-        if std_target < 1e-10:
+        if std_target < EPSILON:
             # If target is constant, perfect match gives score of 1
-            return 1.0 if mean_dev < 1e-10 else 0.0
+            return 1.0 if mean_dev < EPSILON else 0.0
             
         score = 1.0 - (mean_dev / std_target)
         score = max(0.0, min(1.0, score))  # Clamp to [0, 1]
@@ -230,8 +239,8 @@ class ThermalFieldAnalyzer:
             Alignment coefficient (-1 to 1, higher is better)
         """
         # Normalize both fields
-        T_norm = (T_field - np.mean(T_field)) / (np.std(T_field) + 1e-10)
-        load_norm = (load_field - np.mean(load_field)) / (np.std(load_field) + 1e-10)
+        T_norm = (T_field - np.mean(T_field)) / (np.std(T_field) + EPSILON)
+        load_norm = (load_field - np.mean(load_field)) / (np.std(load_field) + EPSILON)
         
         # Compute correlation
         correlation = np.mean(T_norm * load_norm)
@@ -346,9 +355,11 @@ class CoolingOptimizer:
         """
         # Convert load to target temperature
         # Higher load → slightly higher optimal temperature (efficiency)
-        T_load = 298.15 + 5.0 * (load / (np.max(load) + 1e-10))
+        T_load = 298.15 + TEMP_LOAD_COEFFICIENT * (load / (np.max(load) + EPSILON))
         
         # Apply Laplacian (diffusion term)
+        # Note: For 1D arrays, this computes second derivative via finite differences
+        # For proper multi-dimensional Laplacian, use scipy.ndimage.laplace
         laplacian = np.gradient(np.gradient(T_current))
         if isinstance(laplacian, list):
             laplacian_sum = sum(laplacian)
