@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-08T10:05:29.514734",
+  "timestamp": "2025-12-08T12:07:28.299400",
   "date": "2025-12-08",
   "layers": [
     {
@@ -158,6 +158,42 @@
     },
     {
       "name": "Galois extension"
+    },
+    {
+      "name": "Temperature gradient"
+    },
+    {
+      "name": "Thermal entropy"
+    },
+    {
+      "name": "AI cooling optimization"
+    },
+    {
+      "name": "Homeostasis"
+    },
+    {
+      "name": "Field",
+      "color": "#c8c8c8",
+      "source": "autopoietic_synthesis",
+      "confidence": 1.0
+    },
+    {
+      "name": "Curvature",
+      "color": "#c8c8c8",
+      "source": "autopoietic_synthesis",
+      "confidence": 1.0
+    },
+    {
+      "name": "Resonance",
+      "color": "#c8c8c8",
+      "source": "autopoietic_synthesis",
+      "confidence": 1.0
+    },
+    {
+      "name": "Learns-System Synthesis",
+      "color": "#999",
+      "source": "autopoietic_synthesis",
+      "confidence": 0.5
     }
   ],
   "sources": {
@@ -292,6 +328,30 @@
     ],
     "Galois extension": [
       "tiddlers/OPIC-Field-Specification-1.0.tid"
+    ],
+    "Temperature gradient": [
+      "tiddlers/OPIC-Field-Specification-1.0.tid"
+    ],
+    "Thermal entropy": [
+      "tiddlers/OPIC-Field-Specification-1.0.tid"
+    ],
+    "AI cooling optimization": [
+      "tiddlers/OPIC-Field-Specification-1.0.tid"
+    ],
+    "Homeostasis": [
+      "tiddlers/OPIC-Field-Specification-1.0.tid"
+    ],
+    "Field": [
+      "autopoietic_synthesis"
+    ],
+    "Curvature": [
+      "autopoietic_synthesis"
+    ],
+    "Resonance": [
+      "autopoietic_synthesis"
+    ],
+    "Learns-System Synthesis": [
+      "autopoietic_synthesis"
     ]
   }
 }

@@ -69,7 +69,29 @@ layers:
 - name: Tangent symmetry field
 - name: Bracket algebra
 - name: Galois extension
+- name: Temperature gradient
+- name: Thermal entropy
+- name: AI cooling optimization
+- name: Homeostasis
+- color: '#c8c8c8'
+  confidence: 1.0
+  name: Field
+  source: autopoietic_synthesis
+- color: '#c8c8c8'
+  confidence: 1.0
+  name: Curvature
+  source: autopoietic_synthesis
+- color: '#c8c8c8'
+  confidence: 1.0
+  name: Resonance
+  source: autopoietic_synthesis
+- color: '#999'
+  confidence: 0.5
+  name: Learns-System Synthesis
+  source: autopoietic_synthesis
 sources:
+  AI cooling optimization:
+  - tiddlers/OPIC-Field-Specification-1.0.tid
   Airflow Optimization Engine:
   - tiddlers/Thermal-Field-Mapping.tid
   Arts:
@@ -82,6 +104,8 @@ sources:
   - tiddlers/JIT-Language-Model.tid
   Culture:
   - tiddlers/JIT-Language-Model.tid
+  Curvature:
+  - autopoietic_synthesis
   Domain Kernels:
   - tiddlers/JIT-Language-Model.tid
   Entropy Minimization Core:
@@ -92,7 +116,11 @@ sources:
   - tiddlers/Voice-Integration.tid
   Feedback Coupling Engine:
   - tiddlers/Screen-Feed-Witnessing.tid
+  Field:
+  - autopoietic_synthesis
   Galois extension:
+  - tiddlers/OPIC-Field-Specification-1.0.tid
+  Homeostasis:
   - tiddlers/OPIC-Field-Specification-1.0.tid
   Homeostasis Feedback Loop:
   - tiddlers/Thermal-Field-Mapping.tid
@@ -104,6 +132,8 @@ sources:
   - tiddlers/JIT-Language-Model.tid
   Language:
   - tiddlers/JIT-Language-Model.tid
+  Learns-System Synthesis:
+  - autopoietic_synthesis
   Load Pattern Recognition:
   - tiddlers/Thermal-Field-Mapping.tid
   Math:
@@ -124,6 +154,8 @@ sources:
   - tiddlers/JIT-Language-Model.tid
   Real-time Feedback Coupling:
   - tiddlers/Screen-Feed-Witnessing.tid
+  Resonance:
+  - autopoietic_synthesis
   Resonance Field:
   - tiddlers/Resonance-Field.tid
   Response Generator:
@@ -138,12 +170,16 @@ sources:
   - tiddlers/Voice-Integration.tid
   Tangent symmetry field:
   - tiddlers/OPIC-Field-Specification-1.0.tid
+  Temperature gradient:
+  - tiddlers/OPIC-Field-Specification-1.0.tid
   Text-to-Speech:
   - tiddlers/Voice-Integration.tid
   Thermal Gradient Controller:
   - tiddlers/Thermal-Field-Mapping.tid
   Thermal Sensors:
   - tiddlers/Thermal-Field-Mapping.tid
+  Thermal entropy:
+  - tiddlers/OPIC-Field-Specification-1.0.tid
   UI Element Recognition:
   - tiddlers/Screen-Feed-Witnessing.tid
   UX Paradigm Extraction:
@@ -158,4 +194,4 @@ sources:
   - tiddlers/Voice-Integration.tid
   Voice Output Synthesizer:
   - tiddlers/Voice-Integration.tid
-timestamp: '2025-12-08T10:05:29.514734'
+timestamp: '2025-12-08T12:07:28.299400'
