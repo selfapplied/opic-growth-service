@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+<style>
+.title{font:16px sans-serif;fill:#fff;font-weight:bold}
+.label{font:12px sans-serif;fill:#aaa}
+.metric-line{fill:none;stroke-width:2}
+.axis{stroke:#444;stroke-width:1}
+</style>
+<rect width="100%" height="100%" fill="#111"/>
+<text x="400" y="30" class="title" text-anchor="middle">Optimization Timeline</text>
+<line x1="50" y1="50" x2="50" y2="300" class="axis"/>
+<line x1="50" y1="300" x2="750" y2="300" class="axis"/>
+<text x="30" y="175" class="label" text-anchor="middle" transform="rotate(-90 30 175)">
+Normalized Metric Value
+</text>
+<text x="400" y="330" class="label" text-anchor="middle">Optimization Step</text>
+<polyline points="50.0,50.0 120.0,155.1045568843061 190.0,216.09983212328174 260.0,251.55656800175245 330.0,272.19955039374213 400.0,284.2348467371406 470.0,291.2606088537393 540.0,295.36669512914665 610.0,297.76890455298707 680.0,299.17558848608246 750.0,300.0" class="metric-line" stroke="#f00"/>
+<polyline points="50.0,284.6650502701497 120.0,273.29255990712454 190.0,294.1096562110883 260.0,280.4412442267314 330.0,300.0 400.0,206.42229735456715 470.0,146.19071947627944 540.0,100.34310293955559 610.0,74.12193496315288 680.0,58.88835899953065 750.0,50.0" class="metric-line" stroke="#ff0"/>
+<polyline points="50.0,235.0482939904884 120.0,209.07187975481844 190.0,257.0337708474951 260.0,300.0 330.0,295.62009963497655 400.0,250.97029061109268 470.0,192.59601064624792 540.0,139.5785894539339 610.0,98.70107525557691 680.0,69.69737020013036 750.0,50.0" class="metric-line" stroke="#0f0"/>
+<rect x="550" y="350" width="15" height="3" fill="#f00"/>
+<text x="570" y="355" class="label">Curvature (lower is better)</text>
+<rect x="550" y="365" width="15" height="3" fill="#ff0"/>
+<text x="570" y="370" class="label">Entropy (lower is better)</text>
+<rect x="550" y="380" width="15" height="3" fill="#0f0"/>
+<text x="570" y="385" class="label">Alignment (higher is better)</text>
+</svg>
