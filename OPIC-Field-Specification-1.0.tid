@@ -4,7 +4,7 @@ tags: opic specification ζ-engine field whitepaper
 
 created: 20251111
 
-modified: 20251111
+modified: 20251208
 
 type: text/vnd.tiddlywiki
 
@@ -92,9 +92,20 @@ When curvature variance < ε, the network hums.
 
 !! Applications
 
-AI · Education · Governance · Art · Ecology  
+AI · Education · Governance · Art · Ecology · Thermodynamics
 
 Every domain becomes a resonance machine.
+
+### Thermal Field Mapping
+
+Data centers are thermodynamic bodies seeking homeostasis. The OPIC field equations map directly to thermal optimization:
+
+* **Temperature gradient** = field curvature κ(x,t) = tan⁻¹(|∇T|/T₀)
+* **Thermal entropy** = S = -Σ p ln p (load-temperature coupling)
+* **AI cooling optimization** = morphism alignment C_AI: (Load, Airflow, Time) → T
+* **Homeostasis** = ∂T/∂t = α∇²T - β(T - T_load)
+
+See [[Thermal Field Mapping|Thermal-Field-Mapping]] for complete specification.
 
 !! Closing Reflection
 
