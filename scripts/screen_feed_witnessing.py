@@ -16,6 +16,15 @@ from dataclasses import dataclass, field
 
 REPO_DIR = Path(__file__).resolve().parents[1]
 
+# Constants for numerical stability and configuration
+DEFAULT_SCREEN_WIDTH = 1920
+DEFAULT_SCREEN_HEIGHT = 1080
+MAX_CONFIDENCE = 0.99
+CONFIDENCE_INCREMENT = 0.05
+MAX_PARADIGM_EXAMPLES = 10
+OCCURRENCE_SCALING_FACTOR = 10.0
+MAX_EVOLUTION_DELTA = 0.1
+
 
 @dataclass
 class UIElement:
@@ -110,7 +119,7 @@ class ScreenCapture:
             'region': region,
             'full_screen': region is None,
             'status': 'captured',
-            'resolution': (1920, 1080) if region is None else (region[2], region[3])
+            'resolution': (DEFAULT_SCREEN_WIDTH, DEFAULT_SCREEN_HEIGHT) if region is None else (region[2], region[3])
         }
         
         self.capture_count += 1
@@ -372,8 +381,8 @@ class UXParadigmExtractor:
                 else:
                     paradigm = self.learned_paradigms[paradigm_key]
                     paradigm.occurrences += 1
-                    paradigm.confidence = min(0.99, paradigm.confidence + 0.05)
-                    if len(paradigm.examples) < 10:
+                    paradigm.confidence = min(MAX_CONFIDENCE, paradigm.confidence + CONFIDENCE_INCREMENT)
+                    if len(paradigm.examples) < MAX_PARADIGM_EXAMPLES:
                         paradigm.examples.append(interaction_sequence[0].to_dict())
                 
                 return self.learned_paradigms[paradigm_key]
@@ -499,9 +508,9 @@ class OSEvolutionController:
         base_delta = self.evolution_state['learning_rate']
         
         # Scale by paradigm confidence and usage
-        delta = base_delta * paradigm.confidence * (paradigm.occurrences / 10.0)
+        delta = base_delta * paradigm.confidence * (paradigm.occurrences / OCCURRENCE_SCALING_FACTOR)
         
-        return min(delta, 0.1)  # Cap at 0.1 for safety
+        return min(delta, MAX_EVOLUTION_DELTA)
     
     def get_evolution_state(self) -> dict:
         """Get current evolution state."""
