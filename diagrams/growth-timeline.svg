@@ -9,132 +9,135 @@
   <text x="400" y="20" class="title" text-anchor="middle">OPIC Field Growth Timeline</text>
   <line x1="40" y1="40" x2="40" y2="360" class="axis"/>
   <line x1="40" y1="360" x2="760" y2="360" class="axis"/>
-  <path d="M 40.0,101.53846153846155 L 57.5609756097561,101.53846153846155 L 75.1219512195122,101.53846153846155 L 92.6829268292683,101.53846153846155 L 110.2439024390244,101.53846153846155 L 127.80487804878048,101.53846153846155 L 145.3658536585366,101.53846153846155 L 162.9268292682927,101.53846153846155 L 180.4878048780488,101.53846153846155 L 198.0487804878049,101.53846153846155 L 215.60975609756096,101.53846153846155 L 233.1707317073171,101.53846153846155 L 250.73170731707316,101.53846153846155 L 268.29268292682923,101.53846153846155 L 285.8536585365854,101.53846153846155 L 303.4146341463415,101.53846153846155 L 320.9756097560976,101.53846153846155 L 338.5365853658536,101.53846153846155 L 356.0975609756098,101.53846153846155 L 373.6585365853659,101.53846153846155 L 391.2195121951219,101.53846153846155 L 408.7804878048781,101.53846153846155 L 426.3414634146342,101.53846153846155 L 443.9024390243903,101.53846153846155 L 461.4634146341463,101.53846153846155 L 479.0243902439024,101.53846153846155 L 496.5853658536585,101.53846153846155 L 514.1463414634147,40.0 L 531.7073170731708,40.0 L 549.2682926829268,40.0 L 566.829268292683,40.0 L 584.390243902439,40.0 L 601.9512195121952,40.0 L 619.5121951219512,40.0 L 637.0731707317073,40.0 L 654.6341463414634,40.0 L 672.1951219512196,40.0 L 689.7560975609756,40.0 L 707.3170731707318,40.0 L 724.8780487804878,40.0 L 742.4390243902438,40.0 L 760.0,40.0" class="line"/>
+  <path d="M 40.0,101.53846153846155 L 57.14285714285714,101.53846153846155 L 74.28571428571428,101.53846153846155 L 91.42857142857142,101.53846153846155 L 108.57142857142857,101.53846153846155 L 125.71428571428571,101.53846153846155 L 142.85714285714283,101.53846153846155 L 160.0,101.53846153846155 L 177.14285714285714,101.53846153846155 L 194.28571428571428,101.53846153846155 L 211.42857142857142,101.53846153846155 L 228.57142857142858,101.53846153846155 L 245.7142857142857,101.53846153846155 L 262.8571428571429,101.53846153846155 L 280.0,101.53846153846155 L 297.14285714285717,101.53846153846155 L 314.2857142857143,101.53846153846155 L 331.42857142857144,101.53846153846155 L 348.57142857142856,101.53846153846155 L 365.7142857142857,101.53846153846155 L 382.85714285714283,101.53846153846155 L 400.0,101.53846153846155 L 417.14285714285717,101.53846153846155 L 434.28571428571433,101.53846153846155 L 451.4285714285714,101.53846153846155 L 468.57142857142856,101.53846153846155 L 485.7142857142857,101.53846153846155 L 502.8571428571429,40.0 L 520.0,40.0 L 537.1428571428571,40.0 L 554.2857142857143,40.0 L 571.4285714285714,40.0 L 588.5714285714286,40.0 L 605.7142857142857,40.0 L 622.8571428571429,40.0 L 640.0,40.0 L 657.1428571428571,40.0 L 674.2857142857142,40.0 L 691.4285714285714,40.0 L 708.5714285714286,40.0 L 725.7142857142857,40.0 L 742.8571428571429,40.0 L 760.0,40.0" class="line"/>
   <circle cx="40.0" cy="101.53846153846155" class="point"/>
   <text x="40.0" y="375" class="label" text-anchor="middle">2025-11-11</text>
   <text x="40.0" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="57.5609756097561" cy="101.53846153846155" class="point"/>
-  <text x="57.5609756097561" y="375" class="label" text-anchor="middle">2025-11-12</text>
-  <text x="57.5609756097561" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="75.1219512195122" cy="101.53846153846155" class="point"/>
-  <text x="75.1219512195122" y="375" class="label" text-anchor="middle">2025-11-13</text>
-  <text x="75.1219512195122" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="92.6829268292683" cy="101.53846153846155" class="point"/>
-  <text x="92.6829268292683" y="375" class="label" text-anchor="middle">2025-11-14</text>
-  <text x="92.6829268292683" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="110.2439024390244" cy="101.53846153846155" class="point"/>
-  <text x="110.2439024390244" y="375" class="label" text-anchor="middle">2025-11-15</text>
-  <text x="110.2439024390244" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="127.80487804878048" cy="101.53846153846155" class="point"/>
-  <text x="127.80487804878048" y="375" class="label" text-anchor="middle">2025-11-16</text>
-  <text x="127.80487804878048" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="145.3658536585366" cy="101.53846153846155" class="point"/>
-  <text x="145.3658536585366" y="375" class="label" text-anchor="middle">2025-11-17</text>
-  <text x="145.3658536585366" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="162.9268292682927" cy="101.53846153846155" class="point"/>
-  <text x="162.9268292682927" y="375" class="label" text-anchor="middle">2025-11-18</text>
-  <text x="162.9268292682927" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="180.4878048780488" cy="101.53846153846155" class="point"/>
-  <text x="180.4878048780488" y="375" class="label" text-anchor="middle">2025-11-19</text>
-  <text x="180.4878048780488" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="198.0487804878049" cy="101.53846153846155" class="point"/>
-  <text x="198.0487804878049" y="375" class="label" text-anchor="middle">2025-11-20</text>
-  <text x="198.0487804878049" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="215.60975609756096" cy="101.53846153846155" class="point"/>
-  <text x="215.60975609756096" y="375" class="label" text-anchor="middle">2025-11-21</text>
-  <text x="215.60975609756096" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="233.1707317073171" cy="101.53846153846155" class="point"/>
-  <text x="233.1707317073171" y="375" class="label" text-anchor="middle">2025-11-22</text>
-  <text x="233.1707317073171" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="250.73170731707316" cy="101.53846153846155" class="point"/>
-  <text x="250.73170731707316" y="375" class="label" text-anchor="middle">2025-11-23</text>
-  <text x="250.73170731707316" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="268.29268292682923" cy="101.53846153846155" class="point"/>
-  <text x="268.29268292682923" y="375" class="label" text-anchor="middle">2025-11-24</text>
-  <text x="268.29268292682923" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="285.8536585365854" cy="101.53846153846155" class="point"/>
-  <text x="285.8536585365854" y="375" class="label" text-anchor="middle">2025-11-25</text>
-  <text x="285.8536585365854" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="303.4146341463415" cy="101.53846153846155" class="point"/>
-  <text x="303.4146341463415" y="375" class="label" text-anchor="middle">2025-11-26</text>
-  <text x="303.4146341463415" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="320.9756097560976" cy="101.53846153846155" class="point"/>
-  <text x="320.9756097560976" y="375" class="label" text-anchor="middle">2025-11-27</text>
-  <text x="320.9756097560976" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="338.5365853658536" cy="101.53846153846155" class="point"/>
-  <text x="338.5365853658536" y="375" class="label" text-anchor="middle">2025-11-28</text>
-  <text x="338.5365853658536" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="356.0975609756098" cy="101.53846153846155" class="point"/>
-  <text x="356.0975609756098" y="375" class="label" text-anchor="middle">2025-11-29</text>
-  <text x="356.0975609756098" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="373.6585365853659" cy="101.53846153846155" class="point"/>
-  <text x="373.6585365853659" y="375" class="label" text-anchor="middle">2025-11-30</text>
-  <text x="373.6585365853659" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="391.2195121951219" cy="101.53846153846155" class="point"/>
-  <text x="391.2195121951219" y="375" class="label" text-anchor="middle">2025-12-01</text>
-  <text x="391.2195121951219" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="408.7804878048781" cy="101.53846153846155" class="point"/>
-  <text x="408.7804878048781" y="375" class="label" text-anchor="middle">2025-12-02</text>
-  <text x="408.7804878048781" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="426.3414634146342" cy="101.53846153846155" class="point"/>
-  <text x="426.3414634146342" y="375" class="label" text-anchor="middle">2025-12-03</text>
-  <text x="426.3414634146342" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="443.9024390243903" cy="101.53846153846155" class="point"/>
-  <text x="443.9024390243903" y="375" class="label" text-anchor="middle">2025-12-04</text>
-  <text x="443.9024390243903" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="461.4634146341463" cy="101.53846153846155" class="point"/>
-  <text x="461.4634146341463" y="375" class="label" text-anchor="middle">2025-12-05</text>
-  <text x="461.4634146341463" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="479.0243902439024" cy="101.53846153846155" class="point"/>
-  <text x="479.0243902439024" y="375" class="label" text-anchor="middle">2025-12-06</text>
-  <text x="479.0243902439024" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="496.5853658536585" cy="101.53846153846155" class="point"/>
-  <text x="496.5853658536585" y="375" class="label" text-anchor="middle">2025-12-07</text>
-  <text x="496.5853658536585" y="96.53846153846155" class="label" text-anchor="middle">42</text>
-  <circle cx="514.1463414634147" cy="40.0" class="point"/>
-  <text x="514.1463414634147" y="375" class="label" text-anchor="middle">2025-12-08</text>
-  <text x="514.1463414634147" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="531.7073170731708" cy="40.0" class="point"/>
-  <text x="531.7073170731708" y="375" class="label" text-anchor="middle">2025-12-09</text>
-  <text x="531.7073170731708" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="549.2682926829268" cy="40.0" class="point"/>
-  <text x="549.2682926829268" y="375" class="label" text-anchor="middle">2025-12-10</text>
-  <text x="549.2682926829268" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="566.829268292683" cy="40.0" class="point"/>
-  <text x="566.829268292683" y="375" class="label" text-anchor="middle">2025-12-11</text>
-  <text x="566.829268292683" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="584.390243902439" cy="40.0" class="point"/>
-  <text x="584.390243902439" y="375" class="label" text-anchor="middle">2025-12-12</text>
-  <text x="584.390243902439" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="601.9512195121952" cy="40.0" class="point"/>
-  <text x="601.9512195121952" y="375" class="label" text-anchor="middle">2025-12-13</text>
-  <text x="601.9512195121952" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="619.5121951219512" cy="40.0" class="point"/>
-  <text x="619.5121951219512" y="375" class="label" text-anchor="middle">2025-12-14</text>
-  <text x="619.5121951219512" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="637.0731707317073" cy="40.0" class="point"/>
-  <text x="637.0731707317073" y="375" class="label" text-anchor="middle">2025-12-15</text>
-  <text x="637.0731707317073" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="654.6341463414634" cy="40.0" class="point"/>
-  <text x="654.6341463414634" y="375" class="label" text-anchor="middle">2025-12-16</text>
-  <text x="654.6341463414634" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="672.1951219512196" cy="40.0" class="point"/>
-  <text x="672.1951219512196" y="375" class="label" text-anchor="middle">2025-12-17</text>
-  <text x="672.1951219512196" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="689.7560975609756" cy="40.0" class="point"/>
-  <text x="689.7560975609756" y="375" class="label" text-anchor="middle">2025-12-18</text>
-  <text x="689.7560975609756" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="707.3170731707318" cy="40.0" class="point"/>
-  <text x="707.3170731707318" y="375" class="label" text-anchor="middle">2025-12-19</text>
-  <text x="707.3170731707318" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="724.8780487804878" cy="40.0" class="point"/>
-  <text x="724.8780487804878" y="375" class="label" text-anchor="middle">2025-12-20</text>
-  <text x="724.8780487804878" y="35.0" class="label" text-anchor="middle">52</text>
-  <circle cx="742.4390243902438" cy="40.0" class="point"/>
-  <text x="742.4390243902438" y="375" class="label" text-anchor="middle">2025-12-21</text>
-  <text x="742.4390243902438" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="57.14285714285714" cy="101.53846153846155" class="point"/>
+  <text x="57.14285714285714" y="375" class="label" text-anchor="middle">2025-11-12</text>
+  <text x="57.14285714285714" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="74.28571428571428" cy="101.53846153846155" class="point"/>
+  <text x="74.28571428571428" y="375" class="label" text-anchor="middle">2025-11-13</text>
+  <text x="74.28571428571428" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="91.42857142857142" cy="101.53846153846155" class="point"/>
+  <text x="91.42857142857142" y="375" class="label" text-anchor="middle">2025-11-14</text>
+  <text x="91.42857142857142" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="108.57142857142857" cy="101.53846153846155" class="point"/>
+  <text x="108.57142857142857" y="375" class="label" text-anchor="middle">2025-11-15</text>
+  <text x="108.57142857142857" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="125.71428571428571" cy="101.53846153846155" class="point"/>
+  <text x="125.71428571428571" y="375" class="label" text-anchor="middle">2025-11-16</text>
+  <text x="125.71428571428571" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="142.85714285714283" cy="101.53846153846155" class="point"/>
+  <text x="142.85714285714283" y="375" class="label" text-anchor="middle">2025-11-17</text>
+  <text x="142.85714285714283" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="160.0" cy="101.53846153846155" class="point"/>
+  <text x="160.0" y="375" class="label" text-anchor="middle">2025-11-18</text>
+  <text x="160.0" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="177.14285714285714" cy="101.53846153846155" class="point"/>
+  <text x="177.14285714285714" y="375" class="label" text-anchor="middle">2025-11-19</text>
+  <text x="177.14285714285714" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="194.28571428571428" cy="101.53846153846155" class="point"/>
+  <text x="194.28571428571428" y="375" class="label" text-anchor="middle">2025-11-20</text>
+  <text x="194.28571428571428" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="211.42857142857142" cy="101.53846153846155" class="point"/>
+  <text x="211.42857142857142" y="375" class="label" text-anchor="middle">2025-11-21</text>
+  <text x="211.42857142857142" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="228.57142857142858" cy="101.53846153846155" class="point"/>
+  <text x="228.57142857142858" y="375" class="label" text-anchor="middle">2025-11-22</text>
+  <text x="228.57142857142858" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="245.7142857142857" cy="101.53846153846155" class="point"/>
+  <text x="245.7142857142857" y="375" class="label" text-anchor="middle">2025-11-23</text>
+  <text x="245.7142857142857" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="262.8571428571429" cy="101.53846153846155" class="point"/>
+  <text x="262.8571428571429" y="375" class="label" text-anchor="middle">2025-11-24</text>
+  <text x="262.8571428571429" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="280.0" cy="101.53846153846155" class="point"/>
+  <text x="280.0" y="375" class="label" text-anchor="middle">2025-11-25</text>
+  <text x="280.0" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="297.14285714285717" cy="101.53846153846155" class="point"/>
+  <text x="297.14285714285717" y="375" class="label" text-anchor="middle">2025-11-26</text>
+  <text x="297.14285714285717" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="314.2857142857143" cy="101.53846153846155" class="point"/>
+  <text x="314.2857142857143" y="375" class="label" text-anchor="middle">2025-11-27</text>
+  <text x="314.2857142857143" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="331.42857142857144" cy="101.53846153846155" class="point"/>
+  <text x="331.42857142857144" y="375" class="label" text-anchor="middle">2025-11-28</text>
+  <text x="331.42857142857144" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="348.57142857142856" cy="101.53846153846155" class="point"/>
+  <text x="348.57142857142856" y="375" class="label" text-anchor="middle">2025-11-29</text>
+  <text x="348.57142857142856" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="365.7142857142857" cy="101.53846153846155" class="point"/>
+  <text x="365.7142857142857" y="375" class="label" text-anchor="middle">2025-11-30</text>
+  <text x="365.7142857142857" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="382.85714285714283" cy="101.53846153846155" class="point"/>
+  <text x="382.85714285714283" y="375" class="label" text-anchor="middle">2025-12-01</text>
+  <text x="382.85714285714283" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="400.0" cy="101.53846153846155" class="point"/>
+  <text x="400.0" y="375" class="label" text-anchor="middle">2025-12-02</text>
+  <text x="400.0" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="417.14285714285717" cy="101.53846153846155" class="point"/>
+  <text x="417.14285714285717" y="375" class="label" text-anchor="middle">2025-12-03</text>
+  <text x="417.14285714285717" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="434.28571428571433" cy="101.53846153846155" class="point"/>
+  <text x="434.28571428571433" y="375" class="label" text-anchor="middle">2025-12-04</text>
+  <text x="434.28571428571433" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="451.4285714285714" cy="101.53846153846155" class="point"/>
+  <text x="451.4285714285714" y="375" class="label" text-anchor="middle">2025-12-05</text>
+  <text x="451.4285714285714" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="468.57142857142856" cy="101.53846153846155" class="point"/>
+  <text x="468.57142857142856" y="375" class="label" text-anchor="middle">2025-12-06</text>
+  <text x="468.57142857142856" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="485.7142857142857" cy="101.53846153846155" class="point"/>
+  <text x="485.7142857142857" y="375" class="label" text-anchor="middle">2025-12-07</text>
+  <text x="485.7142857142857" y="96.53846153846155" class="label" text-anchor="middle">42</text>
+  <circle cx="502.8571428571429" cy="40.0" class="point"/>
+  <text x="502.8571428571429" y="375" class="label" text-anchor="middle">2025-12-08</text>
+  <text x="502.8571428571429" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="520.0" cy="40.0" class="point"/>
+  <text x="520.0" y="375" class="label" text-anchor="middle">2025-12-09</text>
+  <text x="520.0" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="537.1428571428571" cy="40.0" class="point"/>
+  <text x="537.1428571428571" y="375" class="label" text-anchor="middle">2025-12-10</text>
+  <text x="537.1428571428571" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="554.2857142857143" cy="40.0" class="point"/>
+  <text x="554.2857142857143" y="375" class="label" text-anchor="middle">2025-12-11</text>
+  <text x="554.2857142857143" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="571.4285714285714" cy="40.0" class="point"/>
+  <text x="571.4285714285714" y="375" class="label" text-anchor="middle">2025-12-12</text>
+  <text x="571.4285714285714" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="588.5714285714286" cy="40.0" class="point"/>
+  <text x="588.5714285714286" y="375" class="label" text-anchor="middle">2025-12-13</text>
+  <text x="588.5714285714286" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="605.7142857142857" cy="40.0" class="point"/>
+  <text x="605.7142857142857" y="375" class="label" text-anchor="middle">2025-12-14</text>
+  <text x="605.7142857142857" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="622.8571428571429" cy="40.0" class="point"/>
+  <text x="622.8571428571429" y="375" class="label" text-anchor="middle">2025-12-15</text>
+  <text x="622.8571428571429" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="640.0" cy="40.0" class="point"/>
+  <text x="640.0" y="375" class="label" text-anchor="middle">2025-12-16</text>
+  <text x="640.0" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="657.1428571428571" cy="40.0" class="point"/>
+  <text x="657.1428571428571" y="375" class="label" text-anchor="middle">2025-12-17</text>
+  <text x="657.1428571428571" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="674.2857142857142" cy="40.0" class="point"/>
+  <text x="674.2857142857142" y="375" class="label" text-anchor="middle">2025-12-18</text>
+  <text x="674.2857142857142" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="691.4285714285714" cy="40.0" class="point"/>
+  <text x="691.4285714285714" y="375" class="label" text-anchor="middle">2025-12-19</text>
+  <text x="691.4285714285714" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="708.5714285714286" cy="40.0" class="point"/>
+  <text x="708.5714285714286" y="375" class="label" text-anchor="middle">2025-12-20</text>
+  <text x="708.5714285714286" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="725.7142857142857" cy="40.0" class="point"/>
+  <text x="725.7142857142857" y="375" class="label" text-anchor="middle">2025-12-21</text>
+  <text x="725.7142857142857" y="35.0" class="label" text-anchor="middle">52</text>
+  <circle cx="742.8571428571429" cy="40.0" class="point"/>
+  <text x="742.8571428571429" y="375" class="label" text-anchor="middle">2025-12-22</text>
+  <text x="742.8571428571429" y="35.0" class="label" text-anchor="middle">52</text>
   <circle cx="760.0" cy="40.0" class="point"/>
-  <text x="760.0" y="375" class="label" text-anchor="middle">2025-12-22</text>
+  <text x="760.0" y="375" class="label" text-anchor="middle">2025-12-23</text>
   <text x="760.0" y="35.0" class="label" text-anchor="middle">52</text>
   <text x="30" y="363.0" class="label" text-anchor="end">0</text>
   <text x="30" y="301.46153846153845" class="label" text-anchor="end">10</text>
